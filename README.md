@@ -16,8 +16,6 @@ Asisten AI Otonom berbasis CLI yang dirancang khusus untuk lingkungan **Termux A
 
 ## 📋 Prasyarat
 
-Pastikan beberapa paket berikut sudah terinstal di Termux:
-
 * Python 3
 * Git
 * Package `requests` & `rich`
@@ -30,4 +28,32 @@ Pastikan beberapa paket berikut sudah terinstal di Termux:
 ```bash
 git clone [https://github.com/hadi-exx/Agent.git](https://github.com/hadi-exx/Agent.git)
 cd Agent
+```
 
+### 2. Install Dependensi
+```bash
+pip install requests rich
+```
+
+### 3. Konfigurasi API Key
+Buat file `~/.env` dan masukkan **OpenRouter API Key** kamu:
+```bash
+echo "OPENROUTER_API_KEY=sk-or-v1-xxxxxxxxxxxx" > ~/.env
+```
+
+### 4. Jalankan AI Agent
+```bash
+python agent2.py
+```
+
+---
+
+## 💡 Perintah Dalam Aplikasi
+
+* `clear` : Mereduksi/membersihkan ingatan percakapan dan memulai sesi baru dari nol.
+* `exit` atau `q` : Menyimpan riwayat percakapan ke memori lokal lalu keluar dari aplikasi.
+
+---
+
+## 🛡️ Lisensi & Kepatuhan
+Diperuntukkan untuk penggunaan pribadi dan pengembangan eksperimental di lingkungan Termux Android.
